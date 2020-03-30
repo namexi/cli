@@ -4,7 +4,7 @@
 const program = require('commander')
 const {version} = require('../package.json')
 program.version(version, '-v', '--version')
-    .command('init <name>', 'init project')
+    .command('init <name> <gitRepository>', 'init project')
     .command('refresh', 'refresh routes...')
 
 program.parse(process.argv)
